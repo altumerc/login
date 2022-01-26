@@ -57,6 +57,7 @@ app.post("/register", (req, res)=> {
                 password
             })
             user.save(err => {
+                
                 console.log("registering user")
                 if(err) {
                     console.log(err)
